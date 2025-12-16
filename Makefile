@@ -15,3 +15,13 @@ package-reinstall:
 
 lint:
 	uv run ruff check brain_games
+
+lint-fix:
+	uv run ruff format brain_games
+
+test:
+	uv run pytest -s
+
+build-install:
+	make build
+	make package-reinstall
