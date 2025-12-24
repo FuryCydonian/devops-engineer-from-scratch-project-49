@@ -8,7 +8,7 @@ def welcome_user_and_getting_user_name() -> str:
     return name
 
 
-def ask_question_and_getting_answer(question_expression) -> str:
+def show_expression_to_user_and_getting_user_answer(question_expression) -> str:
     print(f"Question: {question_expression}")
     return prompt.string("Your answer: ")
 
@@ -18,10 +18,7 @@ def show_the_task(task: str):
 
 
 def show_fail_message(user_name, user_answer, correct_answer) -> None:
-    print(
-                f"'{user_answer}' is wrong answer ;(. Correct answer was "
-                f"'{correct_answer}'."
-            )
+    print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
     print(f"Let's try again, {user_name}!")
 
 

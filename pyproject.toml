@@ -18,10 +18,16 @@ packages = ["brain_games"]
 
 [dependency-groups]
 dev = [
+    "pytest>=9.0.2",
     "ruff>=0.14.8",
 ]
+
+[tool.flake8]
+ignore = ["E501", "E203", "W503"]
+exclude = [".git", "__pycache__", ".venv"]
 
 [project.scripts]
 brain-games = "brain_games.scripts.brain_games:main"
 brain-even = "brain_games.scripts.brain_even:main"
 brain-calc = "brain_games.scripts.brain_calc:main"
+brain-gcd = "brain_games.scripts.brain_gcd:main"

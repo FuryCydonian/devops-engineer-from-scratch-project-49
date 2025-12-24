@@ -2,7 +2,7 @@ import random
 from brain_games.games.util_functions_for_games import is_correct_user_answer
 
 
-def brain_even_main_logic(
+def brain_gcd_main_logic(
     user_name: str,
     function_for_show_user_expression_and_getting_user_answer,
     show_success_message_function,
@@ -11,9 +11,10 @@ def brain_even_main_logic(
 ):
     counter = 0
     for _ in range(number_of_attempts):
-        number_for_checking = random.randint(1, 100)
-        user_answer = function_for_show_user_expression_and_getting_user_answer(int(number_for_checking))
-        correct_answer = 'yes' if is_even(number_for_checking) else 'no'
+        a = random.randint(1, 100)
+        b = random.randint(1, 100)
+        user_answer = function_for_show_user_expression_and_getting_user_answer(f"{a} {b}")
+        correct_answer = get_gcd(a, b)
         if is_correct_user_answer(correct_answer, user_answer):
             print("Correct!")
             counter += 1
@@ -23,5 +24,9 @@ def brain_even_main_logic(
     show_success_message_function(user_name)
 
 
-def is_even(number_for_checking: int) -> bool:
-    return number_for_checking % 2 == 0
+def get_gcd(a: int, b: int) -> int:
+    if b == 0:
+        return a
+    while b > 0:
+        a, b = b, a % b
+    return a
