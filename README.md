@@ -11,5 +11,7 @@
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=FuryCydonian_devops-engineer-from-scratch-project-49&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=FuryCydonian_devops-engineer-from-scratch-project-49)
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=FuryCydonian_devops-engineer-from-scratch-project-49&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=FuryCydonian_devops-engineer-from-scratch-project-49)
 
+![Пример установки и работы brain-even](images/even.gif)
 ![Пример работы brain-calc](images/calc.gif)
 ![Пример работы brain-gcd](images/gcd.gif)
+![Пример работы brain-progression](images/progression.gif)
