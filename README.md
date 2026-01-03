@@ -15,3 +15,4 @@
 ![Пример работы brain-calc](images/calc.gif)
 ![Пример работы brain-gcd](images/gcd.gif)
 ![Пример работы brain-progression](images/progression.gif)
+![Пример работы brain-prime](images/prime.gif)
