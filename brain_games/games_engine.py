@@ -62,7 +62,7 @@ def progression_brain():
 
 def prime_brain():
     user_name = welcome_user_and_getting_user_name()
-    show_the_task("Answer 'yes' if given number is prime. Otherwise answer 'no'.")
+    show_the_task("Answer \"yes\" if given number is prime. Otherwise answer \"no\".")
     brain_prime_main_logic(
         user_name,
         show_expression_to_user_and_getting_user_answer,
