@@ -13,7 +13,7 @@ from brain_games.games.util_functions_for_games import (
 
 def even_brain():
     user_name = welcome_user_and_getting_user_name()
-    show_the_task("Answer 'yes' if the number is even, otherwise answer 'no'.")
+    show_the_task("Answer \"yes\" if the number is even, otherwise answer \"no\".")
     brain_even_main_logic(
         user_name,
         show_expression_to_user_and_getting_user_answer,
